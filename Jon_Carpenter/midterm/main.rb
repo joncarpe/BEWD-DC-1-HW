@@ -32,11 +32,11 @@ puts "Welcome to MAGIC TECH JOBS 8-BALL, the 'make my decision for me' app. Just
 
 puts "Enter your minimum annual salary requirement, rounded to the nearest dollar (no '$' needed):"
 
-user_min = gets.chomp.to_i
+user_min = gets.chomp
 	if user_min.class == Float
 		then puts "No decimals please!"
 	else
-		get_angel_salaries(user_min)
+		get_angel_salaries(user_min.to_i)
 	end
 
 user_min
